@@ -22,7 +22,7 @@ service mysqld start
 mysql_secure_installation
 
 #config nginx
-cp /etc/nginx/sites-available/default /etc/nginx/sites-available/piwik.la
+cp /etc/nginx/conf.d/virtual.conf /etc/nginx/sites-available/piwik.la
 ln -s /etc/nginx/sites-available/piwik.la /etc/nginx/sites-enabled
 rm /etc/nginx/sites-enabled/default
 
