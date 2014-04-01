@@ -3,7 +3,6 @@
 #https://github.com/piwikla/ec2-nginx
 
 #Update
-sudo su -
 yum update
 
 #Installing Packages
