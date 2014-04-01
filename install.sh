@@ -21,20 +21,6 @@ chkconfig php-fpm on
 service mysqld start
 mysql_secure_installation
 
-#config nginx
-cp /etc/nginx/conf.d/virtual.conf /etc/nginx/sites-available/piwik.la
-ln -s /etc/nginx/sites-available/piwik.la /etc/nginx/sites-enabled
-rm /etc/nginx/sites-enabled/default
-
-#download piwik
-mkdir -p /home/piwik/public_html/piwik.la
-cd /home/piwik/public_html/piwik.la
-wget http://piwik.org/latest.zip && unzip latest.zip
-cd piwik
-mv * ../
-cd ../
-rm -rf piwik
-
 #Start Nginx
 service php-fpm start
 service nginx start
