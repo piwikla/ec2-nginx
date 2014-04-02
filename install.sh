@@ -8,7 +8,7 @@ yum update
 #Installing Packages
 yum install nginx php-fpm php-xml php-pdo php-odbc \
   php-soap php-common php-cli php-mbstring php-bcmath php-ldap \
-  php-imap php-gd php-pecl-apc
+  php-imap php-gd php-pecl-apc gcc
 yum install mysql-server mysql php-mysql 
 yum install postgresql-server postgresql php-pgsql
   
